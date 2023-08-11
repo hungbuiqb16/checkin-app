@@ -14,8 +14,12 @@ app.use(morgan('combined'))
 
 // setup for body-parser module
 // create application/json parser
-const jsonParser = bodyParser.json()
-const urlencodedParser = bodyParser.urlencoded({ extended: false })
+app.use(bodyParser.json())
+app.use(
+    bodyParser.urlencoded({
+        extended: true,
+    })
+)
 
 // view engine setup
 viewEngine(app)

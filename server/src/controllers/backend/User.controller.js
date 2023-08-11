@@ -9,7 +9,8 @@ async function create(req, res, next) {
 }
 
 async function store(req, res, next) {
-    console.log(req.body.full_name)
+    const {full_name, phone, email, urlFacebook, role, password} = req.body
+    console.log(role)
 }
 
 module.exports = {
