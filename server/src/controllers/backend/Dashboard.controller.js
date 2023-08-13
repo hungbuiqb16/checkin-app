@@ -1,7 +1,7 @@
 
 
 async function index(req, res) {
-    res.render('admin', {layout: 'layouts/admin'})
+    res.render('admin')
 }
 
 module.exports = {
