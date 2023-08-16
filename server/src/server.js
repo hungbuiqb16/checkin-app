@@ -28,6 +28,4 @@ app.use(expressLayouts)
 // init route
 route(app)
 
-app.get('/', (req, res) => res.send('Say hi'))
-
 app.listen(7000, () => console.log(`This app is running on port 7000`))
